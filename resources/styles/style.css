@@ -76,6 +76,14 @@ a {
     margin-left: 15px;
 }
 
+/*Maps*/
+
+#worldmap {
+    width: 1145px;
+    height: 570px;
+    margin: 0 auto;
+}
+
 /*Custom classes*/
 bold {
     font-weight: bold;
