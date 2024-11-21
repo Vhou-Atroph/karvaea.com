@@ -28,6 +28,10 @@ a {
     padding: 5px;
 }
 
+#header-logo img {
+    height: 56px;
+}
+
 #nav {
     position: relative;
 	background-color: #121212;
