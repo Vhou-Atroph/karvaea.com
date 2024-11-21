@@ -24,7 +24,7 @@ a {
 	background-color: #262626;
 	font-weight: bold;
     text-align: center;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
     padding: 5px;
 }
 
@@ -50,12 +50,17 @@ a {
     float: left;
     max-height: 100%;
     padding: 16px;
-    border-right: 1px solid white;
+    border-right: 2px solid #262626;
 }
 
 #nav li:hover {
     color: #1a1a1a;
 	background-color: white;
+}
+
+#nav li:last-child {
+    float: right;
+    border: none;
 }
 
 /*Content*/
