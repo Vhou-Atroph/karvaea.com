@@ -16,7 +16,7 @@
     <body>
         <!-- Navbar -->
         <div class="nograb" id="header">
-            <div id="header-logo"><a href=""><img src="../resources/img/logo.png" alt="KARVAEA.COM" /></a></div>
+            <div id="header-logo"><a href="../"><img src="../resources/img/logo.png" alt="KARVAEA.COM" /></a></div>
             <ul id="nav">
                 <li><a href="" id="this">World</a></li>
                 <li><a>Magic</a></li>
@@ -28,7 +28,7 @@
         <!-- Main content -->
         <div id="content">
             <div id="map">
-                <h1 class="centered">Map of Karvaea</h1>
+                <h1 class="centered">The World of Karvaea</h1>
                 <div class="centered" id="worldmap"></div>
             </div>
             <div id="regionlist">
@@ -38,6 +38,10 @@
                     <tr><td>Dayglare</td><td>Dolos</td><td>Dragonmaw</td><td>Drosera</td></tr>
                     <tr><td>Godspine</td><td>The Lilieaeta</td><td>The Lupine</td><td>Mina</td></tr>
                     <tr><td>Petiola</td><td>Prosos</td><td>Sanguinal</td><td>Tiptop</td></tr>
+                </table>
+                <h2 class="centered">Oceans</h2>
+                <table class="centered">
+                    <tr><td>East Drosera Ocean</td><td>Great Ocean</td><td>South Calla Ocean</td><td>Tiptop Ocean</td></tr>
                 </table>
             </div>
         </div>
@@ -195,5 +199,41 @@
     )
     .addTo(map)
     .bindPopup('Petiola');
+
+    var edroseraocean = L.marker(
+        L.latLng([76, 16]),
+        {
+            title: "East Drosera Ocean"
+        }
+    )
+    .addTo(map)
+    .bindPopup('East Drosera Ocean');
+
+    var greatocean = L.marker(
+        L.latLng([78, -86]),
+        {
+            title: "Great Ocean"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Great Ocean');
+
+    var ntipocean = L.marker(
+        L.latLng([83, -50]),
+        {
+            title: "Tiptop Ocean"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Tiptop Ocean');
+
+    var scallaocean = L.marker(
+        L.latLng([69.66, -56]),
+        {
+            title: "South Calla Ocean"
+        }
+    )
+    .addTo(map)
+    .bindPopup('South Calla Ocean');
     </script>
 </html>
