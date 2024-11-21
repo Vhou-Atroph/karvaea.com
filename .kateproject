@@ -1,1 +1,8 @@
-# karvaea.com
+{
+    "name": "Karvaea Website",
+    "files": [
+        {
+            "git": 1
+        }
+    ]
+}
