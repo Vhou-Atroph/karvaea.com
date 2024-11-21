@@ -18,17 +18,27 @@
         <div class="nograb" id="header">
             <div id="header-logo"><a href=""><img src="../resources/img/logo.png" alt="KARVAEA.COM" /></a></div>
             <ul id="nav">
-                <li>World</li>
-                <li>Magic</li>
-                <li>Species</li>
-                <li>Contact</li>
+                <li><a href="" id="this">World</a></li>
+                <li><a>Magic</a></li>
+                <li><a>Species</a></li>
+                <li><a>Language</a></li>
+                <li><a>Contact</a></li>
             </ul>
         </div>
         <!-- Main content -->
         <div id="content">
             <div id="map">
-                <h1>Map of Karvaea</h1>
-                <div id="worldmap"></div>
+                <h1 class="centered">Map of Karvaea</h1>
+                <div class="centered" id="worldmap"></div>
+            </div>
+            <div id="regionlist">
+                <h2 class="centered">Regions</h2>
+                <table class="centered">
+                    <tr><td>Antiri</td><td>Aquatos</td><td>The Arisaerel</td><td>Calla</td></tr>
+                    <tr><td>Dayglare</td><td>Dolos</td><td>Dragonmaw</td><td>Drosera</td></tr>
+                    <tr><td>Godspine</td><td>The Lilieaeta</td><td>The Lupine</td><td>Mina</td></tr>
+                    <tr><td>Petiola</td><td>Prosos</td><td>Sanguinal</td><td>Tiptop</td></tr>
+                </table>
             </div>
         </div>
     </body>
@@ -41,5 +51,149 @@
             noWrap: true
         }).addTo(map);
     map.setMaxBounds([[87.5, -180], [62, 21.6]]);
+
+    var lupine = L.marker(
+        L.latLng([78.95, -13]),
+        {
+            title: "The Lupine"
+        }
+    )
+    .addTo(map)
+    .bindPopup('The Lupine');
+
+    var calla = L.marker(
+        L.latLng([77, -50]),
+        {
+            title: "Calla"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Calla');
+
+    var dayglare = L.marker(
+        L.latLng([81, -33]),
+        {
+            title: "Dayglare"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Dayglare');
+
+    var antiri = L.marker(
+        L.latLng([82, -63]),
+        {
+            title: "Antiri"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Antiri');
+
+    var tiptop = L.marker(
+        L.latLng([83.2, -26]),
+        {
+            title: "Tiptop"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Tiptop');
+
+    var drosera = L.marker(
+        L.latLng([79.33, 0]),
+        {
+            title: "Drosera"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Drosera');
+
+    var dolos = L.marker(
+        L.latLng([74.4, -32]),
+        {
+            title: "Dolos"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Dolos');
+
+    var godspine = L.marker(
+        L.latLng([66.6, -63]),
+        {
+            title: "Godspine"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Godspine');
+
+    var arisaerel = L.marker(
+        L.latLng([83.2, -125]),
+        {
+            title: "The Arisaerel"
+        }
+    )
+    .addTo(map)
+    .bindPopup('The Arisaerel');
+
+    var prosos = L.marker(
+        L.latLng([81.9, -133]),
+        {
+            title: "Prosos"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Prosos');
+
+    var lilieaeta = L.marker(
+        L.latLng([79, -126]),
+        {
+            title: "The Lilieaeta"
+        }
+    )
+    .addTo(map)
+    .bindPopup('The Lilieaeta');
+
+    var mina = L.marker(
+        L.latLng([80, -113]),
+        {
+            title: "Mina"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Mina');
+
+    var dragonmaw = L.marker(
+        L.latLng([80.2, -100]),
+        {
+            title: "Dragonmaw"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Dragonmaw');
+
+    var sanguinal = L.marker(
+        L.latLng([76.3, -137]),
+        {
+            title: "Sanguinal"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Sanguinal');
+
+    var aquatos = L.marker(
+        L.latLng([73.95, -156]),
+        {
+            title: "Aquatos"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Aquatos');
+
+    var petiola = L.marker(
+        L.latLng([72.33, -124]),
+        {
+            title: "Petiola"
+        }
+    )
+    .addTo(map)
+    .bindPopup('Petiola');
     </script>
 </html>
