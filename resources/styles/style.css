@@ -5,6 +5,11 @@ body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
 .nograb {
     user-select: none;
 	-moz-user-select: none;
@@ -13,45 +18,45 @@ body {
 }
 
 /*Navbar */
-#nav {
-    float: left;
-    border: 3px solid white;
-	position: fixed;
-	background-color: #121212;
-    text-align: center;
-    font-family: Arial;
-    width: 12%;
-}
-
-#nav table {
-    width: 100%;
-}
-
-#nav th {
+#header {
     font: 20px Arial;
 	color: #f7f7f7;
 	background-color: #262626;
 	font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding: 5px;
 }
 
-#nav td:hover {
+#nav {
+    position: relative;
+	background-color: #121212;
+    text-align: center;
+    font-family: Arial;
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    list-style-type: none;
+    flex: 1;
+    margin-top: 1px;
+    overflow: hidden;
+}
+
+#nav li {
+    float: left;
+    max-height: 100%;
+    padding: 16px;
+    border-right: 1px solid white;
+}
+
+#nav li:hover {
     color: #1a1a1a;
 	background-color: white;
 }
 
-#nav .divider {
-    background-color: #303030;
-	color: #cccccc;
-	font: 20px Arial;
-	font-weight: bold;
-}
-
 /*Content*/
 #content {
-    float: right;
-    border-left: 1px solid grey;
     background-color: #141414;
-    width: 86%;
 }
 
 #content h1 {
