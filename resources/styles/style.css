@@ -18,6 +18,10 @@ a {
     text-align: center;
 }
 
+.uncentered {
+    text-align: left;
+}
+
 .nograb {
     user-select: none;
 	-moz-user-select: none;
@@ -116,6 +120,22 @@ a {
 
 #regionlist td {
     padding: 10px;
+}
+
+/*Magic*/
+
+#basic {
+    float: left;
+    padding-left: 20%;
+}
+
+#hybrid {
+    float: right;
+    padding-right: 20%;
+}
+
+#spiritual {
+    clear: both;
 }
 
 /*Custom classes*/
