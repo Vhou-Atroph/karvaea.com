@@ -62,7 +62,12 @@
                 </table>
                 <h2 class="centered">Oceans</h2>
                 <table class="centered">
-                    <tr><td>East Drosera Ocean</td><td>Great Ocean</td><td>South Calla Ocean</td><td>Tiptop Ocean</td></tr>
+                    <tr>
+                        <td><a class="rgnlink"><img class="rgnsvg" src="../resources/svg/East Drosera Ocean.svg" alt="East Drosera Ocean Glyph" />East Drosera Ocean</a></td>
+                        <td><a class="rgnlink"><img class="rgnsvg" src="../resources/svg/Great Ocean.svg" alt="Great Ocean Glyph" />Great Ocean</a></td>
+                        <td><a class="rgnlink"><img class="rgnsvg" src="../resources/svg/South Calla Ocean.svg" alt="South Calla Ocean Glyph" />South Calla Ocean</a></td>
+                        <td><a class="rgnlink"><img class="rgnsvg" src="../resources/svg/Tiptop Ocean.svg" alt="Tiptop Ocean Glyph" />Tiptop Ocean</a></td>
+                    </tr>
                 </table>
             </div>
         </div>
@@ -159,6 +164,26 @@
 
     var petiolamarker = new L.Icon({
         iconUrl: '../resources/img/PetiolaMrker.png',
+        iconSize:    [30, 41]
+    });
+
+    var goceanmarker = new L.Icon({
+        iconUrl: '../resources/img/GreatOceanMrker.png',
+        iconSize:    [30, 41]
+    });
+
+    var edroseramarker = new L.Icon({
+        iconUrl: '../resources/img/EastDroseraOceanMrker.png',
+        iconSize:    [30, 41]
+    });
+
+    var socallamarker = new L.Icon({
+        iconUrl: '../resources/img/SouthCallaOceanMrker.png',
+        iconSize:    [30, 41]
+    });
+
+    var ntipmarker = new L.Icon({
+        iconUrl: '../resources/img/TiptopOceanMrker.png',
         iconSize:    [30, 41]
     });
 
@@ -325,36 +350,40 @@
     .bindPopup('Petiola');
 
     var edroseraocean = L.marker(
-        L.latLng([76, 16]),
+        L.latLng([80.5, 8]),
         {
-            title: "East Drosera Ocean"
+            title: "East Drosera Ocean",
+            icon: edroseramarker
         }
     )
     .addTo(map)
-    .bindPopup('East Drosera Ocean');
+    .bindPopup('East Drosera<br>Ocean');
 
     var greatocean = L.marker(
         L.latLng([78, -86]),
         {
-            title: "Great Ocean"
+            title: "Great Ocean",
+            icon: goceanmarker
         }
     )
     .addTo(map)
     .bindPopup('Great Ocean');
 
     var ntipocean = L.marker(
-        L.latLng([83, -50]),
+        L.latLng([83.5, -50]),
         {
-            title: "Tiptop Ocean"
+            title: "Tiptop Ocean",
+            icon: ntipmarker
         }
     )
     .addTo(map)
     .bindPopup('Tiptop Ocean');
 
     var scallaocean = L.marker(
-        L.latLng([69.66, -56]),
+        L.latLng([70.4, -56]),
         {
-            title: "South Calla Ocean"
+            title: "South Calla Ocean",
+            icon: socallamarker
         }
     )
     .addTo(map)
