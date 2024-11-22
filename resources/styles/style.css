@@ -148,6 +148,23 @@ a {
 
 /*Magic*/
 
+.mgclink {
+    display: block;
+}
+
+.mgclink:hover {
+    background-color: grey;
+    color: white;
+}
+
+.mgclink img {
+    padding: 10px;
+}
+
+.mgclink:hover img {
+    background-color: grey;
+}
+
 #basic {
     float: left;
     padding-left: 20%;
@@ -163,6 +180,10 @@ a {
 }
 
 /*Popups*/
+
+.margin-runetop {
+    margin-top: 3px;
+}
 
 #popupcloser {
     font-size: 200%;
