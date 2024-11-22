@@ -101,13 +101,21 @@ a {
 
 /*Maps*/
 
+.rgnsvg {
+    width: 16px;
+}
+
+.rgnlink {
+    font-size: 120%;
+}
+
 #worldmap {
     width: 1145px;
     height: 570px;
 }
 
 #regionlist td {
-    padding: 30px;
+    padding: 10px;
 }
 
 /*Custom classes*/
