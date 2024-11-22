@@ -18,6 +18,26 @@ a {
     text-align: center;
 }
 
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.clear-right {
+    clear: right;
+}
+
+.cleared {
+    clear: both;
+}
+
 .uncentered {
     text-align: left;
 }
@@ -105,6 +125,10 @@ a {
 
 /*Maps*/
 
+.popupmap {
+    width: 33%;
+}
+
 .rgnsvg {
     width: 16px;
 }
@@ -136,6 +160,12 @@ a {
 
 #spiritual {
     clear: both;
+}
+
+/*Popups*/
+
+#popupcloser {
+    font-size: 200%;
 }
 
 /*Custom classes*/
