@@ -199,7 +199,8 @@ a {
 /*Popups*/
 
 .popupmap {
-    height: 160px;
+    border: 2px solid black;
+    height: 156px;
 }
 
 .margin-runetop {
