@@ -120,10 +120,6 @@ a {
 
 /*Maps*/
 
-.popupmap {
-    width: 33%;
-}
-
 .rgnsvg {
     width: 16px;
 }
@@ -201,6 +197,10 @@ a {
 }
 
 /*Popups*/
+
+.popupmap {
+    height: 160px;
+}
 
 .margin-runetop {
     margin-top: 3px;
