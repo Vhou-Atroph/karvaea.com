@@ -77,13 +77,29 @@
     </body>
     <script>
     var map = L.map('worldmap').setView([78, -80], 3);
-    L.tileLayer('./assets/tiles/world/{z}/{x}/{y}.png', {
+
+    map.setMaxBounds([[87.5, -180], [62, 21.6]]);
+
+    var rgnmap = L.tileLayer('./assets/tiles/world/{z}/{x}/{y}.png', {
             center: [0,0],
             minZoom: 3,
             maxZoom: 5,
             noWrap: true
-        }).addTo(map);
-    map.setMaxBounds([[87.5, -180], [62, 21.6]]);
+    }).addTo(map);
+
+    var physmap = L.tileLayer('./assets/tiles/phys/{z}/{x}/{y}.png', {
+            center: [0,0],
+            minZoom: 3,
+            maxZoom: 5,
+            noWrap: true
+    });
+
+    var layertypes = {
+        "Region map": rgnmap,
+        "World map": physmap
+    };
+
+    L.control.layers(layertypes).addTo(map);
 
     // Markers
 
