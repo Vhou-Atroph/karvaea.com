@@ -201,7 +201,8 @@ a {
 .popupmap {
     border-left: 2px solid black;
     border-bottom: 2px solid black;
-    height: 158px;
+    max-height: 158px;
+    max-width: 300px;
 }
 
 .margin-runetop {
