@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
     <TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
-      <Title>Karvaea-Map.png</Title>
+      <Title>Karvaea-World-Map.png</Title>
       <Abstract></Abstract>
       <SRS></SRS>
       <BoundingBox minx="0.00000000000000" miny="-2304.00000000000000" maxx="4608.00000000000000" maxy="0.00000000000000"/>
@@ -13,9 +13,6 @@
         <TileSet href="3" units-per-pixel="4.00000000000000" order="3"/>
         <TileSet href="4" units-per-pixel="2.00000000000000" order="4"/>
         <TileSet href="5" units-per-pixel="1.00000000000000" order="5"/>
-        <TileSet href="6" units-per-pixel="0.50000000000000" order="6"/>
-        <TileSet href="7" units-per-pixel="0.25000000000000" order="7"/>
-        <TileSet href="8" units-per-pixel="0.12500000000000" order="8"/>
       </TileSets>
     </TileMap>
     

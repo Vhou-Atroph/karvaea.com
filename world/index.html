@@ -80,26 +80,37 @@
 
     map.setMaxBounds([[87.5, -180], [62, 21.6]]);
 
-    var rgnmap = L.tileLayer('./assets/tiles/world/{z}/{x}/{y}.png', {
+    var rgnmap = L.tileLayer('./assets/tiles/regions/{z}/{x}/{y}.png', {
             center: [0,0],
             minZoom: 3,
             maxZoom: 5,
             noWrap: true
     }).addTo(map);
 
-    var physmap = L.tileLayer('./assets/tiles/phys/{z}/{x}/{y}.png', {
+    var worldmap = L.tileLayer('./assets/tiles/world/{z}/{x}/{y}.png', {
             center: [0,0],
             minZoom: 3,
             maxZoom: 5,
             noWrap: true
     });
 
+    var rvrmtnmap = L.tileLayer('./assets/tiles/rvrsmtns/{z}/{x}/{y}.png', {
+            center: [0,0],
+            minZoom: 3,
+            maxZoom: 5,
+            noWrap: true
+    }).addTo(map);
+
     var layertypes = {
         "Region map": rgnmap,
-        "World map": physmap
+        "World map": worldmap
     };
 
-    L.control.layers(layertypes).addTo(map);
+    var overlays = {
+        "Rivers and Mountains": rvrmtnmap
+    };
+
+    L.control.layers(layertypes, overlays).addTo(map);
 
     // Markers
 
