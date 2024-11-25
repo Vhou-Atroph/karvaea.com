@@ -101,12 +101,15 @@
             noWrap: true
     }).addTo(map);
 
+    var rgnmrkrs = L.layerGroup().addTo(map);
+
     var layertypes = {
         "Region map": rgnmap,
         "World map": worldmap
     };
 
     var overlays = {
+        "Region markers": rgnmrkrs,
         "Rivers and Mountains": rvrmtnmap
     };
 
@@ -223,7 +226,7 @@
             icon: lupinemarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('The Lupine');
 
     var calla = L.marker(
@@ -233,7 +236,7 @@
             icon: callamarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Calla');
 
     var dayglare = L.marker(
@@ -243,7 +246,7 @@
             icon: dayglaremarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Dayglare');
 
     var antiri = L.marker(
@@ -253,7 +256,7 @@
             icon: antirimarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Antiri');
 
     var tiptop = L.marker(
@@ -263,7 +266,7 @@
             icon: tiptopmarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Tiptop');
 
     var drosera = L.marker(
@@ -273,17 +276,17 @@
             icon: droseramarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Drosera');
 
     var dolos = L.marker(
-        L.latLng([74.9, -32]),
+        L.latLng([74.9, -34]),
         {
             title: "Dolos",
             icon: dolosmarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Dolos');
 
     var godspine = L.marker(
@@ -293,17 +296,17 @@
             icon: godspinemarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Godspine');
 
     var arisaerel = L.marker(
-        L.latLng([83.6, -125]),
+        L.latLng([83.9, -125]),
         {
             title: "The Arisaerel",
             icon: arisaerelmarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('The Arisaerel');
 
     var prosos = L.marker(
@@ -313,7 +316,7 @@
             icon: prososmarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Prosos');
 
     var lilieaeta = L.marker(
@@ -323,7 +326,7 @@
             icon: lilieaetamarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('The Lilieaeta');
 
     var mina = L.marker(
@@ -333,7 +336,7 @@
             icon: minamarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Mina');
 
     var dragonmaw = L.marker(
@@ -343,17 +346,17 @@
             icon: dragonmawmarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Dragonmaw');
 
     var sanguinal = L.marker(
-        L.latLng([76.3, -137]),
+        L.latLng([77, -143]),
         {
             title: "Sanguinal",
             icon: sanguinalmarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Sanguinal');
 
     var aquatos = L.marker(
@@ -363,17 +366,17 @@
             icon: aquatosmarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Aquatos');
 
     var petiola = L.marker(
-        L.latLng([72.33, -124]),
+        L.latLng([72.33, -126]),
         {
             title: "Petiola",
             icon: petiolamarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Petiola');
 
     var edroseraocean = L.marker(
@@ -383,7 +386,7 @@
             icon: edroseramarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('East Drosera<br>Ocean');
 
     var greatocean = L.marker(
@@ -393,7 +396,7 @@
             icon: goceanmarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Great Ocean');
 
     var ntipocean = L.marker(
@@ -403,7 +406,7 @@
             icon: ntipmarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('Tiptop Ocean');
 
     var scallaocean = L.marker(
@@ -413,7 +416,7 @@
             icon: socallamarker
         }
     )
-    .addTo(map)
+    .addTo(rgnmrkrs)
     .bindPopup('South Calla Ocean');
     </script>
 </html>
