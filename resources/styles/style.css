@@ -137,6 +137,14 @@ a {
     padding: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+
+    #worldmap {
+        width: 80%;
+        height: 260px;
+    }
+}
+
 /*Magic*/
 
 .mgclink {
