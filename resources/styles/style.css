@@ -244,6 +244,13 @@ a {
     font-size: 200%;
 }
 
+@media screen and (max-width: 599px) {
+
+    .popupmap {
+        max-width: 36%;
+    }
+}
+
 /*Custom classes*/
 bold {
     font-weight: bold;
