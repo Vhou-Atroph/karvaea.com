@@ -137,7 +137,7 @@ a {
     padding: 10px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 
     .rgnsvg {
         width: 14px;
@@ -175,19 +175,19 @@ a {
 
 #basic {
     float: left;
-    padding-left: 20%;
+    padding-left: 15%;
 }
 
 #hybrid {
     float: right;
-    padding-right: 20%;
+    padding-right: 15%;
 }
 
 #spiritual {
     clear: both;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 
     #basic {
         padding: 10px;
