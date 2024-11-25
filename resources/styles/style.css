@@ -125,7 +125,7 @@ a {
 }
 
 .rgnlink {
-    font-size: 120%;
+    font-size: 18px;
 }
 
 #worldmap {
@@ -138,6 +138,14 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
+
+    .rgnsvg {
+        width: 14px;
+    }
+
+    .rgnlink {
+        font-size: 16px;
+    }
 
     #worldmap {
         width: 80%;
