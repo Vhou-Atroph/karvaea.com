@@ -80,6 +80,13 @@
 
     map.setMaxBounds([[87.5, -180], [62, 21.6]]);
 
+    var ocnmap = L.tileLayer('./assets/tiles/water/{z}/{x}/{y}.png', {
+            center: [0,0],
+            minZoom: 3,
+            maxZoom: 5,
+            noWrap: true
+    }).addTo(map);
+
     var rgnmap = L.tileLayer('./assets/tiles/regions/{z}/{x}/{y}.png', {
             center: [0,0],
             minZoom: 3,
