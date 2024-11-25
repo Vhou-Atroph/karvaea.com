@@ -157,6 +157,7 @@ a {
 
 .mgclink {
     display: block;
+    padding: 8px;
 }
 
 .mgclink:hover {
@@ -184,6 +185,20 @@ a {
 
 #spiritual {
     clear: both;
+}
+
+@media screen and (max-width: 1200px) {
+
+    #basic {
+        padding: 10px;
+        float: none;
+    }
+
+    #hybrid {
+        padding: 10px;
+        clear: both;
+        float: none;
+    }
 }
 
 /*Writings*/
