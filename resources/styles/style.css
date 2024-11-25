@@ -126,6 +126,12 @@ a {
 
 .rgnlink {
     font-size: 18px;
+    display: block;
+}
+
+.rgnlink:hover {
+    background-color: grey;
+    color: white;
 }
 
 #worldmap {
