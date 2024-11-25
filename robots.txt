@@ -1,0 +1,8 @@
+User-agent: GPTBot
+Disallow: /
+
+# Everyone else is fine
+User-agent: *
+Allow: /
+
+Sitemap: https://karvaea.com/sitemap.xml
