@@ -118,6 +118,13 @@ a {
     margin-left: 15px;
 }
 
+@media screen and (max-width: 1300px) {
+
+    #content {
+        width: 90%;
+    }
+}
+
 /*Maps*/
 
 .rgnsvg {
